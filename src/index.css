@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Fraunces', serif;
+}
+
+:root {
+  --background: #fbf6ee;      /* warm cream */
+  --foreground: #2b1c14;      /* deep cocoa */
+  --card: #ffffff;
+  --card-foreground: #2b1c14;
+  --primary: #b5471f;         /* warm terracotta/orange */
+  --primary-foreground: #fff7ee;
+  --secondary: #f4e6d2;       /* soft caramel */
+  --secondary-foreground: #6b3f1d;
+  --muted: #f1e7d9;
+  --muted-foreground: #8a6f5c;
+  --accent: #4a6b3d;          /* subtle green */
+  --accent-foreground: #ffffff;
+  --border: #ead9c4;
+  --ring: #d98a3d;            /* gold */
+  --radius: 16px;
+
+  --brown: #4a2c19;
+  --gold: #d98a3d;
+  --green: #4a6b3d;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.font-serif { font-family: 'Fraunces', serif; }
+
+/* Hide scrollbars by default, show on hover */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: var(--border) transparent;
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-float-up { animation: floatUp 0.4s ease both; }

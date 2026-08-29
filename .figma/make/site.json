@@ -1,0 +1,10 @@
+{
+  "description": "Helps users track medication dosages and sends timely refill reminders to ensure consistent and safe medication management.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
